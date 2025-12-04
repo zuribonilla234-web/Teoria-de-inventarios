@@ -59,6 +59,17 @@ public class Teoria_de_colas{
                     int c=entrada.nextInt();
                     System.out.println("Ingrese la tasa de llegadas (λ): ");
                     float lambda3=entrada.nextFloat();
+                    System.out.println("Ingrese la tasa de servicio por servidor (μ): ");
+                    float miu3=entrada.nextFloat();
+
+                    float a=lambda3/miu3;
+                    System.out.println("Carga total por servidor: "+a);
+                    float p3=a/c;
+                    System.out.println("Utilizacion por servidor: "+p3);
+                    float suma=0;
+                    for(int n=0;n<c;n++){
+                        suma += Math.pow(a,n)/factorial(n);
+                    }
 
 
 
