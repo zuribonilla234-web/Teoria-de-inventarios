@@ -35,7 +35,15 @@ public class Teoria_de_colas{
                         System.out.println("Ingrese el horario de atencion: ");
                         float hora=entrada.nextFloat();
                         float miu2=(pedidos)/(hora);
+                        System.out.println("Ingrese la tasa de llegada (λ): ");
+                        float lambda2=entrada.nextFloat();
+                        System.out.println("Ingrese la capacidad maxima del sistema (k): ");
+                        float k=entrada.nextInt();
+                        float p2=lambda2/miu2;
+                        System.out.println("Utilizacion del sistema: "+p2);
+                        float pcero=(float)((1-p2)/(1-(Math.pow(p2,k+1))));
                         
+
 
 
             }
