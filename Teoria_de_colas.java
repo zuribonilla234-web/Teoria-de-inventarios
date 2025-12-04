@@ -42,7 +42,18 @@ public class Teoria_de_colas{
                         float p2=lambda2/miu2;
                         System.out.println("Utilizacion del sistema: "+p2);
                         float pcero=(float)((1-p2)/(1-(Math.pow(p2,k+1))));
-                        
+                        System.out.println("Probabilidad de cero clientes:"+pcero);
+                        float pk=(float)((Math.pow(p2, k)) * (pcero));
+                        System.out.println("Probabilidad de rechazo: "+pk);
+                        float tasaDeLlegada=(lambda2*1)-pk;
+                        System.out.println("Tasa de llegadas: "+tasaDeLlegada);
+                        float l=(float)(p2*(1-(k+1)*(Math.pow(p2,k))+k*(Math.pow(p2,k+1 )))/(1-p2)*(1-(Math.pow(p2,k+1))));
+                        System.out.println("Longitud de cola: "+l);
+                        float w2=l/tasaDeLlegada;
+                        System.out.println("Tiempo en el sistema: "+w2);
+                        break;
+
+
 
 
 
