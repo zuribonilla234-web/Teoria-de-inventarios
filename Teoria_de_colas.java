@@ -29,6 +29,13 @@ public class Teoria_de_colas{
                     break;
 
                     case 2:
+                        System.out.println("Modelo MM1K");
+                        System.out.println("Ingrese la tasa de llegada o pedido: ");
+                        float pedidos=entrada.nextFloat();
+                        System.out.println("Ingrese el horario de atencion: ");
+                        float hora=entrada.nextFloat();
+                        float miu2=(pedidos)/(hora);
+                        
 
 
             }
