@@ -10,7 +10,10 @@ public class Teoria_de_colas{
             System.out.println("3. Modelo m/m/c");
             System.out.println("0. salir del programa");
             opcion=entrada.nextByte();
-            
+            switch(opcion){
+                
+            }
+
 
         }while (opcion !=0);
         
