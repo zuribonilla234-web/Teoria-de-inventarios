@@ -28,30 +28,30 @@ public class Teoria_de_colas{
                     System.out.println("Tiempo total en el sistema: "+w);
                     break;
 
-                    case 2:
-                        System.out.println("Modelo MM1K");
-                        System.out.println("Ingrese la tasa de llegada o pedido: ");
-                        float pedidos=entrada.nextFloat();
-                        System.out.println("Ingrese el horario de atencion: ");
-                        float hora=entrada.nextFloat();
-                        float miu2=(pedidos)/(hora);
-                        System.out.println("Ingrese la tasa de llegada (λ): ");
-                        float lambda2=entrada.nextFloat();
-                        System.out.println("Ingrese la capacidad maxima del sistema (k): ");
-                        float k=entrada.nextInt();
-                        float p2=lambda2/miu2;
-                        System.out.println("Utilizacion del sistema: "+p2);
-                        float pcero=(float)((1-p2)/(1-(Math.pow(p2,k+1))));
-                        System.out.println("Probabilidad de cero clientes:"+pcero);
-                        float pk=(float)((Math.pow(p2, k)) * (pcero));
-                        System.out.println("Probabilidad de rechazo: "+pk);
-                        float tasaDeLlegada=(lambda2*1)-pk;
-                        System.out.println("Tasa de llegadas: "+tasaDeLlegada);
-                        float l=(float)(p2*(1-(k+1)*(Math.pow(p2,k))+k*(Math.pow(p2,k+1 )))/(1-p2)*(1-(Math.pow(p2,k+1))));
-                        System.out.println("Longitud de cola: "+l);
-                        float w2=l/tasaDeLlegada;
-                        System.out.println("Tiempo en el sistema: "+w2);
-                        break;
+                case 2:
+                    System.out.println("Modelo MM1K");
+                    System.out.println("Ingrese la tasa de llegada o pedido: ");
+                    float pedidos=entrada.nextFloat();
+                    System.out.println("Ingrese el horario de atencion: ");
+                    float hora=entrada.nextFloat();
+                    float miu2=(pedidos)/(hora);
+                    System.out.println("Ingrese la tasa de llegada (λ): ");
+                    float lambda2=entrada.nextFloat();
+                    System.out.println("Ingrese la capacidad maxima del sistema (k): ");
+                    float k=entrada.nextInt();
+                    float p2=lambda2/miu2;
+                    System.out.println("Utilizacion del sistema: "+p2);
+                    float pcero=(float)((1-p2)/(1-(Math.pow(p2,k+1))));
+                    System.out.println("Probabilidad de cero clientes:"+pcero);
+                    float pk=(float)((Math.pow(p2, k)) * (pcero));
+                    System.out.println("Probabilidad de rechazo: "+pk);
+                    float tasaDeLlegada=(lambda2*1)-pk;
+                    System.out.println("Tasa de llegadas: "+tasaDeLlegada);
+                    float l=(float)(p2*(1-(k+1)*(Math.pow(p2,k))+k*(Math.pow(p2,k+1 )))/(1-p2)*(1-(Math.pow(p2,k+1))));
+                    System.out.println("Longitud de cola: "+l);
+                    float w2=l/tasaDeLlegada;
+                    System.out.println("Tiempo en el sistema: "+w2);
+                    break;
 
 
 
