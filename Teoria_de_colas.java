@@ -53,6 +53,14 @@ public class Teoria_de_colas{
                     System.out.println("Tiempo en el sistema: "+w2);
                     break;
 
+                case 3:
+                    System.out.println("Modelo MMC");
+                    System.out.println("Ingrese el numero de servidores (c): ");
+                    int c=entrada.nextInt();
+                    System.out.println("Ingrese la tasa de llegadas (λ): ");
+                    float lambda3=entrada.nextFloat();
+
+
 
 
 
