@@ -79,17 +79,17 @@ public class Teoria_de_colas{
                     System.out.println("Promedio en la cola: "+lq2);
                     float wq2=lq2/lambda3;
                     System.out.println("Tiempo de espera en la cola "+wq2);
-                    
-
-
-
-
-
-
-
+                    float l2=lq2+a;
+                    System.out.println("Longitud de la cola: "+l2);
+                    float w3=wq2+(1/miu3);
+                    System.out.println("Tiempo total en el sistema: "+w3);
+                    break;
+                
+                case 0:
+                    System.out.println("Saliendo del programa...");
+                    break;
 
             }
-
 
         }while (opcion !=0);
         
