@@ -70,7 +70,7 @@ public class Teoria_de_colas{
                     for(int n=0;n<c;n++){
                         suma += Math.pow(a,n)/factorial(n);
                     }
-                    suma+=Math.pow(a,n)/factorial(n);
+                    suma+=Math.pow(a, c)/(factorial(c)*(1-p3));
                     float p0=1/suma;
                     System.out.println("Probabilidad de cero clientes: "+p0);
                     float pEsp=(float)(Math.pow(a,c)*p0/(factorial(c)*(1-p3)));
@@ -93,5 +93,12 @@ public class Teoria_de_colas{
 
         }while (opcion !=0);
         
+    }
+    public static long factorial(int n){
+        long fact=1;
+        for(int i=2;i<=n;i++){
+            fact*=i;
+        }
+        return fact;
     }
 }
