@@ -70,6 +70,18 @@ public class Teoria_de_colas{
                     for(int n=0;n<c;n++){
                         suma += Math.pow(a,n)/factorial(n);
                     }
+                    suma+=Math.pow(a,n)/factorial(n);
+                    float p0=1/suma;
+                    System.out.println("Probabilidad de cero clientes: "+p0);
+                    float pEsp=(float)(Math.pow(a,c)*p0/(factorial(c)*(1-p3)));
+                    System.out.println("Probabilidad de espera: "+pEsp);
+                    float lq2=(pEsp*p3)/(1-p3);
+                    System.out.println("Promedio en la cola: "+lq2);
+                    float wq2=lq2/lambda3;
+                    System.out.println("Tiempo de espera en la cola "+wq2);
+                    
+
+
 
 
 
