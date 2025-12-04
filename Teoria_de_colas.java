@@ -17,7 +17,12 @@ public class Teoria_de_colas{
                     float lambda=entrada.nextFloat();
                     System.out.println("Ingrese la tasa de servicio (μ): ");
                     float miu=entrada.nextFloat();
-                    
+
+                    float p=lambda/miu;
+                    System.out.println("utilizacion del sistema: "+p);
+                    float lq=(float)(Math.pow(lambda, 2)/(miu*(miu-lambda)));
+                    System.out.println("Promedio de clientes en la cola: "+lq);
+
 
             }
 
