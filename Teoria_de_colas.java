@@ -11,7 +11,14 @@ public class Teoria_de_colas{
             System.out.println("0. salir del programa");
             opcion=entrada.nextByte();
             switch(opcion){
-                
+                case 1:
+                    System.out.println("Modelo MM1");
+                    System.out.println("Ingrese la tasa de llegadas (λ): ");
+                    float lambda=entrada.nextFloat();
+                    System.out.println("Ingrese la tasa de servicio (μ): ");
+                    float miu=entrada.nextFloat();
+                    
+
             }
 
 
