@@ -22,6 +22,13 @@ public class Teoria_de_colas{
                     System.out.println("utilizacion del sistema: "+p);
                     float lq=(float)(Math.pow(lambda, 2)/(miu*(miu-lambda)));
                     System.out.println("Promedio de clientes en la cola: "+lq);
+                    float wq=lq/lambda;
+                    System.out.println("Tiempo promedio de espera en la cola: "+wq);
+                    float w=wq+(1/miu);
+                    System.out.println("Tiempo total en el sistema: "+w);
+                    break;
+
+                    case 2:
 
 
             }
